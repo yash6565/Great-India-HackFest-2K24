@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        /* Navigation menu */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #83D223;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        /* Form styling (unchanged) */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #83D223;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:#83D223;
+        }
+        [dir] .ResultListPage_paymentRankingPadding__hZ6Lz {
+    padding-bottom: var(--abs-4);
+}
+[dir] .ResultListPage_paymentRankingWrapper__giQhf {
+    padding-top: var(--abs-8);
+}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <div class="container">
+        <h1>Book Your Ride</h1>
+        <form action="/book" method="post">
+            <label for="vehicle-type">Select Vehicle Type:</label>
+            <select id="vehicle-type" name="vehicle-type">
+                <option value="cab">Cab</option>
+                <option value="bike">Bike</option>
+                <option value="public-transport">Public Transport</option>
+            </select>
+            <label for="pickup-location">Pickup Location:</label>
+            <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter pickup location" required>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <div class="">
+        
+    </div>
+</body
+        <form action="/book" method="post">
+            <!-- Form fields (unchanged) -->
+        </form>
+    </div>
+</body>
+</html>

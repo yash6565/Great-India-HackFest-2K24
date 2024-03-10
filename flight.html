@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="flight.css">
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./calculator.html">carbon-FPC</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Trip Planning</a>
+              <div class="dropdown-content">
+                <a href="#">Service 1</a>
+                <a href="#">Service 2</a>
+                <a href="#">Service 3</a>
+              </div>
+            </li>
+          </ul>
+        <a href="#" class="logo"><img src="./pics/logo1.jpeg" alt=""></a>
+        <div class="h-right">
+          <a href="#">Follow us</a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+  
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <div class="br bx-menu" id="menu-icon"></div>
+        </div>
+      </header>
+    <div class="booking-form">
+        <h2>Flight Booking</h2>
+        <form action="#" method="post">
+            <!-- Departure and Destination -->
+            <div class="form-group">
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required>
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required>
+            </div>
+
+            <!-- Preferred Airline and Seating -->
+            <div class="form-group">
+                <label for="airline">Preferred Airline:</label>
+                <select id="airline" name="airline">
+                    <option value="American Airlines">American Airlines</option>
+                    <option value="Delta Airlines">Delta Airlines</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="seating">Preferred Seating:</label>
+                <select id="seating" name="seating">
+                    <option value="Window">Window</option>
+                    <option value="Aisle">Aisle</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <!-- Departure Date and Time -->
+            <div class="form-group">
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+            <div class="form-group">
+                <label for="departure-time">Departure Time:</label>
+                <input type="time" id="departure-time" name="departure-time" required>
+            </div>
+
+            <!-- Number of Passengers -->
+            <div class="form-group">
+                <label for="adults">Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="children">Children:</label>
+                <input type="number" id="children" name="children" min="0">
+            </div>
+
+            <!-- Fare Type (One Way or Round-Trip) -->
+            <div class="form-group">
+                <label>Fare Type:</label>
+                <input type="radio" id="one-way" name="fare-type" value="one-way" required>
+                <label for="one-way">One Way</label>
+                <input type="radio" id="round-trip" name="fare-type" value="round-trip">
+                <label for="round-trip">Round-Trip</label>
+            </div>
+
+            <!-- Return Date and Time (if applicable) -->
+            <div class="form-group">
+                <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <div class="form-group">
+                <label for="return-time">Return Time:</label>
+                <input type="time" id="return-time" name="return-time">
+            </div>
+
+            <!-- Additional Message -->
+            <div class="form-group">
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+            <!-- Personal Details -->
+            <h3>Personal Details</h3>
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
+``

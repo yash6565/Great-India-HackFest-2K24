@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+            
+        header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width:100% ;
+    background: transparent ;
+    padding: 27px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.logo img{
+   width: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    color: var(--main-colour-two);
+    font-size: var(--P-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 22px;
+    transition: all 0.5s ease;
+}
+.navbar a:hover{
+
+    color: var(--main-color);
+}
+
+.h-right a:first-child{
+    color: var(--text-color);
+    font-size: var(--P-font);
+    margin-right: 20px;
+}
+
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.h-right a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+
+    
+}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar label {
+            font-weight: bold;
+            color: #333;
+        }
+        /* Add more sidebar styling as needed */
+
+        /* Bus details section */
+        .bus-details {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .bus-details h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .bus-details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .bus-details li {
+            margin-bottom: 5px;
+        }
+        .bus-details p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Booking</h1>
+        <header>
+            <ul class="navbar">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./calculator.html">carbon-FPC</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Trip Planning</a>
+                <div class="dropdown-content">
+                  <a href="#">Service 1</a>
+                  <a href="#">Service 2</a>
+                  <a href="#">Service 3</a>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="logo"><img src="./pics/logo1.jpeg" alt="" /></a>
+            <div class="h-right">
+              <a href="#">Follow us</a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+      
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <div class="br bx-menu" id="menu-icon"></div>
+            </div>
+          </header>
+        <form>
+            <!-- Input fields for pickup location, destination, date, etc. -->
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup">
+            <!-- Add similar input fields for destination, date, etc. -->
+
+            <!-- Bus type selection -->
+            <label for="busType">Select Bus Type:</label>
+            <select id="busType" name="busType">
+                <option value="private">Private Bus</option>
+                <option value="government">Government Bus</option>
+            </select>
+
+            <!-- Sidebar for additional inputs -->
+            <div class="sidebar">
+                <label for="departureTime">Departure Time:</label>
+                <input type="time" id="departureTime" name="departureTime">
+
+                <!-- Add more input fields for arrival time, amenities, etc. -->
+                <!-- Example: -->
+                <label for="busClass">Bus Class:</label>
+                <select id="busClass" name="busClass">
+                    <option value="ac">AC</option>
+                    <option value="non-ac">Non-AC</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <!-- Button to search for available buses -->
+            <button type="submit">Search Buses</button>
+        </form>
+
+        <!-- Display available buses, seats, and fare -->
+        <div class="bus-details">
+            <h2>Available Buses:</h2>
+            <ul>
+                <li>KPN Travels (Non-AC)</li>
+                <li>ABC Travels (AC)</li>
+                <!-- Add more bus details here -->
+            </
+        </ul>
+        <p>Seats available: 26</p>
+        <p>Ticket fare: $50</p>
+    </div>
+</div>
+</body>
+</html>

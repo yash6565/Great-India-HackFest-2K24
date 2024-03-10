@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    scroll-behavior: smooth;
+
+}
+:root{
+    --text-color:#fff;
+    --bg-color:#7b4e36;
+    --main-color:#33582F;
+    --main-colour-two:#83D223;
+    --h1-font:6rem;
+    --h2-font:3rem;
+    --P-font:1rem;
+
+}
+body{
+    background-color: var(--bg-color);
+    height: 200vh     ;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width:100% ;
+    background: transparent ;
+    padding: 27px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+.logo img{
+   width: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    color: var(--main-colour-two);
+    font-size: var(--P-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 22px;
+    transition: all 0.5s ease;
+}
+.navbar a:hover{
+
+    color: var(--main-color);
+}
+
+.h-right a:first-child{
+    color: var(--text-color);
+    font-size: var(--P-font);
+    margin-right: 20px;
+}
+
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.h-right a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+
+    
+}
+#menu-icon{
+    color: var(--main-color);
+    font-size: 30px;
+    cursor: pointer;
+    z-index:10001 ;
+    display: none;
+
+}
+.Home{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(to left,rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./pics/amazon-riverboat-luxury-cruise-sailing-peruvian-river-blue-sky-rainforest-delfin-amazon-cruises.jpg);
+   background-size: cover;
+   background-position: left center;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+}
+/* .homeText{
+    margin: 40px auto;
+} */
+.homeText h5{
+    font-size: 22px;
+    font-weight: 900;
+    color:var(--main-colour-two);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+.homeText h1{
+    font-size: var(--h1-font);
+    font-weight: 600;
+    color: var(--main-colour-two);
+  
+
+}
+
+.homeText p{
+    font-size: var(--main-colour-two);
+    font-weight: 600;
+    color: var(--text-color);
+  
+
+}
+/* Add this code in your existing CSS */
+
+/* Dropdown container */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    color: var(--main-colour-two);
+    font-size: var(--P-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 22px;
+    transition: all 0.5s ease;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #845454;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--main-colour-two);
+    padding: 12px 16px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    color: var(--main-color);
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.primary-button{
+    background-color: var(--main-color);
+    border: none;
+    color: var(--text-color);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.get-started .primary-button{
+    margin: 30px;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+header.sticky{
+    padding: 8px 17%;
+    background:transparent;
+    backdrop-filter: blur(20px);
+
+}
+.container{
+    margin: 10px 10%;
+}
+
+.exclusives-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.card>h1{
+    font: 1em sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+.ExclusivesH{
+    text-align: center;
+    font-size: var(--h2-font);
+    color: var(--main-colour-two);
+}
+.housedetails{
+    padding: 0 12%;
+
+}
+.housetitle{
+    margin-top: 50px;
+}
+
+.housedetails h1{
+    margin-top: 10%;
+    font-weight: 600;
+    color: var(--main-colour-two);
+}
+.housetitle .row{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+   flex-wrap: wrap;
+}
+.housetitle span{
+    margin: 0 20px;
+}
+.housetitle i{
+    color: #33582F;
+    font-size: 14px;
+
+}
+.gallery{
+    display: grid;
+    grid-gap:10px;
+}
+.gallery div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+
+/* calculator  */
+
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #745151;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+ 
+

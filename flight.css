@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./pics/WhatsApp\ Image\ 2024-03-10\ at\ 02.59.14_c6d94e5c.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+/* Form container */
+.booking-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    background: linear-gradient(90deg, #af7251 0%, #7b4e36);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    
+    max-width: 400px;
+}
+
+/* Form headings */
+h2, h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Form input fields */
+.form-group {
+    margin-bottom: 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #715234;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width:100% ;
+    background: transparent ;
+    padding: 27px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+header.sticky{
+    padding: 8px 17%;
+    background:transparent;
+    backdrop-filter: blur(20px);
+
+}
+.logo img{
+   width: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    color: var(--main-colour-two);
+    font-size: var(--P-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 15px 22px;
+    transition: all 0.5s ease;
+}
+.navbar a:hover{
+
+    color: var(--main-color);
+}
+
+.h-right a:first-child{
+    color: var(--text-color);
+    font-size: var(--P-font);
+    margin-right: 20px;
+}
+
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.h-right a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+
+    
+}
+
+/* Submit button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add animations and effects as desired */
+/* Example: Hover effect on form fields */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+select:hover,
+textarea:hover {
+    border-color: #007bff;
+}
